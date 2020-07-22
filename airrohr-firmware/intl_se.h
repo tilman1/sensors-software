@@ -38,6 +38,7 @@ const char INTL_BASICAUTH[] PROGMEM = "Aktivera BasicAuth";
 #define INTL_REPORT_ISSUE "Rapportera ett problem"
 
 const char INTL_FS_WIFI_DESCRIPTION[] PROGMEM = "WiFi-sensor i konfigurationsläge";
+const char INTL_ENABLE_ETHERNET[] PROGMEM = "";
 const char INTL_FS_WIFI_NAME[] PROGMEM = "Sensorns WLAN namn";
 const char INTL_MORE_SETTINGS[] PROGMEM = "Avancerade inställningar";
 const char INTL_AUTO_UPDATE[] PROGMEM = "Automatisk uppdatering";

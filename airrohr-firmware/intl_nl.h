@@ -38,6 +38,7 @@ const char INTL_BASICAUTH[] PROGMEM = "Beperk toegang";
 #define INTL_REPORT_ISSUE "Een probleem melden"
 
 const char INTL_FS_WIFI_DESCRIPTION[] PROGMEM = "Netwerknaam en -wachtwoord van de fijnstofsensor";
+const char INTL_ENABLE_ETHERNET[] PROGMEM = "";
 const char INTL_FS_WIFI_NAME[] PROGMEM = "Naam (SSID)";
 const char INTL_MORE_SETTINGS[] PROGMEM = "Meer instellingen";
 const char INTL_AUTO_UPDATE[] PROGMEM = "Firmware automatisch bijwerken";

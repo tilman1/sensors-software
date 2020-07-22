@@ -37,6 +37,7 @@ const char INTL_NEO6M[] PROGMEM = "GPS (NEO 6M)";
 const char INTL_BASICAUTH[] PROGMEM = "Prihlásenie (heslom)";
 
 const char INTL_FS_WIFI_DESCRIPTION[] PROGMEM = "WiFi modul v konfiguračnom móde";
+const char INTL_ENABLE_ETHERNET[] PROGMEM = "";
 const char INTL_FS_WIFI_NAME[] PROGMEM = "Názov siete";
 const char INTL_MORE_SETTINGS[] PROGMEM = "Ďalšie nastavenia";
 const char INTL_AUTO_UPDATE[] PROGMEM = "Auto. aktualizácia";

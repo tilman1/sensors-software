@@ -38,6 +38,7 @@ const char INTL_BASICAUTH[] PROGMEM = "Оторизация";
 #define INTL_REPORT_ISSUE "Подаване на сигнал за проблем"
 
 const char INTL_FS_WIFI_DESCRIPTION[] PROGMEM = "WiFi сензор в режим на конфигуриране";
+const char INTL_ENABLE_ETHERNET[] PROGMEM = "";
 const char INTL_FS_WIFI_NAME[] PROGMEM = "Име";
 const char INTL_MORE_SETTINGS[] PROGMEM = "Още настройки";
 const char INTL_AUTO_UPDATE[] PROGMEM = "Автоматична актуализация";

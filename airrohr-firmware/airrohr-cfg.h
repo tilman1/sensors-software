@@ -25,6 +25,7 @@ struct ConfigShapeEntry {
 
 enum ConfigShapeId {
 	Config_current_lang,
+  Config_ethernet_enabled,
 	Config_wlanssid,
 	Config_wlanpwd,
 	Config_www_username,
@@ -87,6 +88,7 @@ enum ConfigShapeId {
 	Config_ssl_influx,
 };
 const char CFG_KEY_CURRENT_LANG[] PROGMEM = "current_lang";
+const char CFG_KEY_ETHERNET_ENABLED[] PROGMEM = "ethernet_enabled";
 const char CFG_KEY_WLANSSID[] PROGMEM = "wlanssid";
 const char CFG_KEY_WLANPWD[] PROGMEM = "wlanpwd";
 const char CFG_KEY_WWW_USERNAME[] PROGMEM = "www_username";
@@ -149,6 +151,7 @@ const char CFG_KEY_MEASUREMENT_NAME_INFLUX[] PROGMEM = "measurement_name_influx"
 const char CFG_KEY_SSL_INFLUX[] PROGMEM = "ssl_influx";
 static constexpr ConfigShapeEntry configShape[] PROGMEM = {
 	{ Config_Type_String, sizeof(cfg::current_lang)-1, FPSTR(CFG_KEY_CURRENT_LANG), cfg::current_lang },
+  { Config_Type_Bool, 0, FPSTR(CFG_KEY_ETHERNET_ENABLED), &cfg::ethernet_enabled},
 	{ Config_Type_String, sizeof(cfg::wlanssid)-1, FPSTR(CFG_KEY_WLANSSID), cfg::wlanssid },
 	{ Config_Type_Password, sizeof(cfg::wlanpwd)-1, FPSTR(CFG_KEY_WLANPWD), cfg::wlanpwd },
 	{ Config_Type_String, sizeof(cfg::www_username)-1, FPSTR(CFG_KEY_WWW_USERNAME), cfg::www_username },

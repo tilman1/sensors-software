@@ -38,6 +38,7 @@ const char INTL_BASICAUTH[] PROGMEM = "Autorización";
 #define INTL_REPORT_ISSUE "Reportar un problema"
 
 const char INTL_FS_WIFI_DESCRIPTION[] PROGMEM = "Sensor WiFi en modo de configuración";
+const char INTL_ENABLE_ETHERNET[] PROGMEM = "Habilitar Ethernet/Desactivar Wifi";
 const char INTL_FS_WIFI_NAME[] PROGMEM = "Nombre";
 const char INTL_MORE_SETTINGS[] PROGMEM = "Más configuraciones";
 const char INTL_AUTO_UPDATE[] PROGMEM = "Actualización automática del Firmware";

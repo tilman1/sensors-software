@@ -38,6 +38,7 @@ const char INTL_BASICAUTH[] PROGMEM = "yetkilendirme";
 #define INTL_REPORT_ISSUE "Sorun bildirin"
 
 const char INTL_FS_WIFI_DESCRIPTION[] PROGMEM = "WiFi Sensörü Yapılandırma modunda";
+const char INTL_ENABLE_ETHERNET[] PROGMEM = "";
 const char INTL_FS_WIFI_NAME[] PROGMEM = "Isim";
 const char INTL_MORE_SETTINGS[] PROGMEM = "Daha fazla ayar";
 const char INTL_AUTO_UPDATE[] PROGMEM = "Yazılımı (Firmware) Otomatik güncelle ";

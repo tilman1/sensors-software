@@ -8,6 +8,7 @@ String		www_username
 Password		www_password
 String		fs_ssid
 Password		fs_pwd
+Bool		ethernet_enabled
 Bool		www_basicauth_enabled
 Bool		dht_read
 Bool		htu21d_read

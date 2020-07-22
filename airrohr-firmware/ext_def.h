@@ -2,15 +2,18 @@
 #define CURRENT_LANG INTL_LANG
 
 // Wifi config
+#define ETHERNET_ENABLED 0
 const char WLANSSID[] PROGMEM = "Freifunk-disabled";
 const char WLANPWD[] PROGMEM = "";
 
 // BasicAuth config
 const char WWW_USERNAME[] PROGMEM = "admin";
-const char WWW_PASSWORD[] PROGMEM = "";
+const char WWW_PASSWORD[] PROGMEM = "feinstaub";
 #define WWW_BASICAUTH_ENABLED 0
 
+
 // Sensor Wifi config (config mode)
+
 #define FS_SSID ""
 #define FS_PWD ""
 
@@ -44,6 +47,8 @@ enum LoggerEntry {
 
 struct LoggerConfig {
     uint16_t destport;
+    uint16_t _unused;
+    // added to make code compile
     uint16_t errors;
 #if defined(ESP8266)
     BearSSL::Session* session;
@@ -188,6 +193,20 @@ static const char MEASUREMENT_NAME_INFLUX[] PROGMEM = "feinstaub";
 #define PPD_PIN_PM2 GPS_SERIAL_RX
 #endif
 
+//  === pin assignments for olimex esp32-poe-iso board ===================================
+
+#if defined(OLIMAX_ESP32_POE)
+#warning "OLIMAX ESP32 POE ISO"
+#define PM_SERIAL_RX RX1 // Pin 4/GPIO36 of ESP32
+#define PM_SERIAL_TX TX1  // Pin 26/GPIO4 of ESP32
+#define I2C_PIN_SCL -1
+#define I2C_PIN_SDA -1
+#define ONEWIRE_PIN -1
+#define PPD_PIN_PM1 -1
+#define PPD_PIN_PM2 -1
+#define GPS_SERIAL_RX -1
+#define GPS_SERIAL_TX -1
+#endif
 
 // DHT22, temperature, humidity
 #define DHT_READ 1
@@ -242,9 +261,6 @@ static const char MEASUREMENT_NAME_INFLUX[] PROGMEM = "feinstaub";
 #define DNMS_API_PIN 15
 #define DNMS_CORRECTION "0.0"
 
-// Temp compensation
-#define TEMP_CORRECTION "0.0"
-
 // GPS, preferred Neo-6M
 #define GPS_READ 0
 #define GPS_API_PIN 9
@@ -286,4 +302,4 @@ static const char MEASUREMENT_NAME_INFLUX[] PROGMEM = "feinstaub";
 #define DISPLAY_DEVICE_INFO 1
 
 // Set debug level for serial output?
-#define DEBUG 3
+#define DEBUG 5

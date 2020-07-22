@@ -38,6 +38,7 @@ const char INTL_BASICAUTH[] PROGMEM = "Azonosítás";
 #define INTL_REPORT_ISSUE "Jelents egy hibát"
 
 const char INTL_FS_WIFI_DESCRIPTION[] PROGMEM = "WiFi Szenzor konfigurációs módban";
+const char INTL_ENABLE_ETHERNET[] PROGMEM = "";
 const char INTL_FS_WIFI_NAME[] PROGMEM = "Név";
 const char INTL_MORE_SETTINGS[] PROGMEM ="További beállítások";
 const char INTL_AUTO_UPDATE[] PROGMEM = "Firmware automatikus frissítése";

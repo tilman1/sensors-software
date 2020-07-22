@@ -38,6 +38,7 @@ const char INTL_BASICAUTH[] PROGMEM = "Активировать аутентиф
 #define INTL_REPORT_ISSUE "Сообщить о проблеме"
 
 const char INTL_FS_WIFI_DESCRIPTION[] PROGMEM = "Название WiFi устройства в режиме конфигурации";
+const char INTL_ENABLE_ETHERNET[] PROGMEM = "";
 const char INTL_FS_WIFI_NAME[] PROGMEM = "Имя";
 const char INTL_MORE_SETTINGS[] PROGMEM = "Дополнительные настройки";
 const char INTL_AUTO_UPDATE[] PROGMEM = "Автоматическое обновление";

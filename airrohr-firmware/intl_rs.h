@@ -38,6 +38,7 @@ const char INTL_BASICAUTH[] PROGMEM = "Autorizacija";
 #define INTL_REPORT_ISSUE "Пријавите проблем"
 
 const char INTL_FS_WIFI_DESCRIPTION[] PROGMEM = "WiFi senzor u konfiguracionom režimu";
+const char INTL_ENABLE_ETHERNET[] PROGMEM = "";
 const char INTL_FS_WIFI_NAME[] PROGMEM = "Naziv";
 const char INTL_MORE_SETTINGS[] PROGMEM = "Više podešavanja";
 const char INTL_AUTO_UPDATE[] PROGMEM = "Automatski ažuriraj firmver";
